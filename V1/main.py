@@ -54,7 +54,7 @@ class TelaPrincipal:
         label_escolha = tk.Label(self.janela, text="Escolha uma Etiqueta:")
         label_escolha.grid(row=4, column=0, padx=10, pady=5)
 
-        etq = ['','PIPE', 'CHAMADO']
+        etq = ['','PIPE', 'CHAMADO', '']
         opcoes_etq = tk.StringVar(self.janela)
         opcoes_etq.set(etq[0])
         option_menu_etq = tk.OptionMenu(self.janela, opcoes_etq, *etq)
@@ -63,7 +63,7 @@ class TelaPrincipal:
         label_analista = tk.Label(self.janela, text="Analista:")
         label_analista.grid(row=6, column=0, padx=10, pady=5)
 
-        nomes = ['','Arthur', 'Felipe', 'Fred', 'Jhones', 'Ralf', 'Thomas']
+        nomes = ['','Arthur', 'Felipe', 'Fred', 'Jhones', 'Ralf', 'Thomas', '']
         opcoes_nomes = tk.StringVar(self.janela)
         opcoes_nomes.set(nomes[0])
         option_menu_nomes = tk.OptionMenu(self.janela, opcoes_nomes, *nomes)
